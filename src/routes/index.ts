@@ -1,10 +1,10 @@
 import express from 'express';
-import helloWorldRouter from './helloworldRoutes';
+import logRouter from './logRoutes';
 
 const router = express.Router();
 
 
-router.use('/', helloWorldRouter);
+router.use('/', logRouter);
 
 export default router;
 
