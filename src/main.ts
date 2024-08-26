@@ -6,7 +6,6 @@ var cors = require('cors')
 const PORT = defaultConfig.PORT || 3000;
 const app: Express = express();
 
-
 //middleware
 app.use(express.json());
 app.use(cors())
@@ -15,6 +14,6 @@ app.use(cors())
 app.use('/api', router);
 
 app.listen(PORT, () => {
-    console.log(`⚡️[server]: Server is running at http://localhost:${PORT}/api/`);
+    console.log(`⚡️[server]: Server is running at http://localhost:${PORT}/api/hello`);
 });
 
